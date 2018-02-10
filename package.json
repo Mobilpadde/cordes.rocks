@@ -1,0 +1,24 @@
+{
+  "name": "cordes.rocks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mads Cordes",
+  "license": "MIT",
+  "scripts": {
+    "parcel": "parcel src/index.html",
+    "watch": "parcel watch src",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.5.1",
+    "parcel-plugin-pug": "^0.2.4"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.2.2"
+  }
+}
