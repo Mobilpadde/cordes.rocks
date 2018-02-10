@@ -14,10 +14,18 @@ class Person extends Component {
     }
 
     componentWillMount() {
-        const { id } = this.props;
+        const { id, name } = this.props;
 
-        fetch(`https://graph.facebook.com/${id}/picture?width=1920`)
-            .then(src => this.setState({pic: src.url}));
+        if (id != '') {
+            fetch(`https://graph.facebook.com/${id}/picture?width=1920`)
+                .then(src => this.setState({pic: src.url}));
+        } else {
+            if (name.toLowerCase() === 'tommy') {
+                this.setState({
+                    pic: 'https://media.licdn.com/media/AAEAAQAAAAAAAAXyAAAAJDFlNjc5MTgyLWI0NTYtNGVkNi04YjUyLWM3NmQyNjhjMmUwYw.jpg'
+                });
+            }
+        }
     }
 
     render() {
