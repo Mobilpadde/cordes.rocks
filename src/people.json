@@ -1,0 +1,27 @@
+[
+    {
+        "name": 'Caroline',
+        "id": 1114633209,
+        "bram": false,
+    },
+    {
+        "name": 'Charlotte',
+        "id": 1674609757,
+        "bram": true,
+    },
+    {
+        "name": 'Mads',
+        "id": 1454924324,
+        "bram": false,
+    },
+    {
+        "name": 'Tina',
+        "id": 1388408541,
+        "bram": false,
+    },
+    {
+        "name": 'Tommy',
+        "id": 100022933517624,
+        "bram": false,
+    }
+]

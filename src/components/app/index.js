@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Route
 } from 'react-router-dom';
 
 import Family from '../family';
+import Nav from '../nav';
+
+import './style.sass';
 
 class App extends Component {
     componentDidCatch(err, info) {
@@ -14,7 +17,10 @@ class App extends Component {
     render() {
         return (
             <Router>
-                <Route exact path='/' component={Family}/>
+                <div>
+                    <Nav />
+                    <Route path='/:whom?' component={Family}/>
+                </div>
             </Router> 
         );
     }
